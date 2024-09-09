@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nutri_fit/pages/diet-page.dart';
+import 'package:nutri_fit/pages/login-page.dart';
 import 'package:nutri_fit/theme/theme-provider.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +18,7 @@ class NutriFitApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DietPage(),
+      home: LoginPage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
